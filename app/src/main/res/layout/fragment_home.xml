@@ -34,7 +34,7 @@
         android:layout_marginRight="99dp"
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:autoText="false"
-        android:text="Bienvenue sur Jpet Store"
+        android:text="@string/acceuil"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
