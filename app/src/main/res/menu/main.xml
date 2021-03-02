@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/Acceuil"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Acceuil"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Panier"
+        android:orderInCategory="100"
+        android:title="Panier"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Recherche"
+        android:orderInCategory="100"
+        android:title="Recherche"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Connexion"
+        android:orderInCategory="100"
+        android:title="Connection"
         app:showAsAction="never" />
 </menu>
