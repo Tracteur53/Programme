@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Recherche",Toast.LENGTH_SHORT).show();
             case R.id.Connexion:
                 Toast.makeText(getApplicationContext(),"Connexion",Toast.LENGTH_SHORT).show();
+                //test
             default:
                 return super.onOptionsItemSelected(item);
         }
