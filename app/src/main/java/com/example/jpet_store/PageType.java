@@ -9,13 +9,14 @@ import android.widget.TextView;
 
 //C'est la page ou on trouve le taleau des types des poissons
 public class PageType extends AppCompatActivity {
-    TextView type1;
+    TextView addcart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_type);
-        type1=findViewById(R.id.addcart);
-        type1.setOnClickListener(new View.OnClickListener() {
+        //si on clique sur add card on passe à la page Card
+        addcart=findViewById(R.id.addcart);
+        addcart.setOnClickListener(new View.OnClickListener() {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
