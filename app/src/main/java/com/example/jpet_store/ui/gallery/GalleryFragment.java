@@ -2,24 +2,35 @@ package com.example.jpet_store.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.ContentView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import java.util.ArrayList;
 import com.example.jpet_store.R;
-
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TableRow.LayoutParams;
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
+    private LinearLayout myLayout;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
@@ -32,4 +43,8 @@ public class GalleryFragment extends Fragment {
         });
         return root;
     }
+    private boolean table_flg = false;
+
+
 }
+
