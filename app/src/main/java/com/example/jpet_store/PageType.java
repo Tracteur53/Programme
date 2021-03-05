@@ -14,12 +14,12 @@ public class PageType extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_type);
-        type1=findViewById(R.id.type1);
+        type1=findViewById(R.id.addcart);
         type1.setOnClickListener(new View.OnClickListener() {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
-                Intent goIntent=new Intent(PageType.this,AngelFish.class);
+                Intent goIntent=new Intent(PageType.this,Card.class);
                 startActivity(goIntent);
             }
         });
