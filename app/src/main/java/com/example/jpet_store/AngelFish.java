@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.jpet_store.ui.slideshow.SlideshowFragment;
 
 public class AngelFish extends AppCompatActivity {
-
+    //liaison entre page angelfish et card
     TextView angelfish1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

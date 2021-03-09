@@ -21,7 +21,7 @@ import com.example.jpet_store.R;
 public class SlideshowFragment extends AppCompatActivity {
 
     private SlideshowViewModel slideshowViewModel;
-
+    //text
     TextView type1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
