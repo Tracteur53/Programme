@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()){
             case R.id.poisson:
                 Toast.makeText(getApplicationContext(),"Poisson",Toast.LENGTH_SHORT).show();
-                //Intent goIntent = new Intent(getApplicationContext(), AngelFish.class);
-                //startActivity(goIntent);
+                Intent goIntent = new Intent(getApplicationContext(), AngelFish.class);
+                startActivity(goIntent);
                 break;
             case R.id.chien:
                 Toast.makeText(getApplicationContext(),"Chien",Toast.LENGTH_SHORT).show();

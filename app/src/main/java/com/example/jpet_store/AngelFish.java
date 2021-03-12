@@ -15,7 +15,7 @@ public class AngelFish extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page_type);
+        setContentView(R.layout.angel_fish);
         angelfish1=findViewById(R.id.angelfish1);
         angelfish1.setOnClickListener(new View.OnClickListener() {
             @Override
