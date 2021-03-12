@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jpet_Store">
+        <activity android:name=".PaymentActivity"></activity>
         <activity
             android:name=".SignIn2_Activity"
             android:label="@string/title_activity_sign_in2_"
-            android:theme="@style/Theme.Jpet_Store.NoActionBar"></activity>
+            android:theme="@style/Theme.Jpet_Store.NoActionBar" />
         <activity android:name=".SignIn_Activity" />
         <activity android:name=".Login_Activity" />
         <activity android:name=".Card" />

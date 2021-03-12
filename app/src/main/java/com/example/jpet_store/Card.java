@@ -31,7 +31,7 @@ public class Card extends AppCompatActivity {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
-                Intent goIntent=new Intent(Card.this,PaymentFragment.class);
+                Intent goIntent=new Intent(Card.this,Login_Activity.class);
                 startActivity(goIntent);
             }
         });

@@ -1,55 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Activity">
+    tools:context=".PaymentFragment">
 
     <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You must sign on before attempting to check out"
-        android:textSize="15dp"
+        android:text="Payment Details"
+        android:textSize="40dp"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        />
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text1"
-        android:text="Please sign on and try checking out again."
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
         />
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
-        android:text="Please enter your username and password."
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        />
     <LinearLayout
-        android:id="@+id/layoutSignin"
+        android:id="@+id/layoutPayment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         >
+
         <TableLayout
             android:id="@+id/table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
+            android:layout_marginVertical="30dp"
             android:layout_marginHorizontal="10dp"
             android:collapseColumns="2,2"
             >
@@ -58,7 +39,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Username:"
+                    android:text="Card Type:"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18dp"
@@ -84,7 +65,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Password:"
+                    android:text="Card Number:"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18dp"
@@ -97,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:inputType="textPassword"
+                    android:inputType="text"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:gravity="center"
@@ -106,39 +87,45 @@
 
             </TableRow>
 
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Expire Date: (MM/YY)"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"/>
+
+                <EditText
+                    android:id="@+id/expireDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="20dp"/>
+
+            </TableRow>
 
         </TableLayout>
 
     </LinearLayout>
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutSignin"
-        android:layout_centerHorizontal="true"
-        android:text="LogIn"
-        />
 
-    <TextView
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/loginBtn"
-        android:text="Please sign on and try checking out again."
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        />
     <Button
-        android:id="@+id/registerBtn"
+        android:id="@+id/continueBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:textSize="15dp"
-        android:layout_below="@id/text4"
-        android:layout_marginTop="10dp"
+        android:text="Continue"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
         />
 
 </RelativeLayout>
