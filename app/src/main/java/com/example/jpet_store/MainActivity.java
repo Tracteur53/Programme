@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()) {
             case R.id.Acceuil:
                 Toast.makeText(getApplicationContext(),"Acceuil",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new HomeFragment()).commit();
                 return true;
             case R.id.Panier:
                 Toast.makeText(getApplicationContext(),"Panier",Toast.LENGTH_SHORT).show();
@@ -92,8 +93,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()){
             case R.id.poisson:
                 Toast.makeText(getApplicationContext(),"Poisson",Toast.LENGTH_SHORT).show();
-                Intent goIntent = new Intent(getApplicationContext(), AngelFish.class);
-                startActivity(goIntent);
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new SlideshowFragment()).commit();
                 break;
             case R.id.chien:
                 Toast.makeText(getApplicationContext(),"Chien",Toast.LENGTH_SHORT).show();
