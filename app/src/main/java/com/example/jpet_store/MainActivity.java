@@ -1,14 +1,22 @@
 package com.example.jpet_store;
 
-import android.app.Fragment;
+//import android.app.FragmentManager;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.jpet_store.ui.gallery.GalleryFragment;
+import com.example.jpet_store.ui.home.HomeFragment;
+import com.example.jpet_store.ui.slideshow.SlideshowFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,7 +25,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -38,23 +46,18 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        navigationView.setNavigationItemSelectedListener(this::onNavigationItemSelected);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        /*MenuItem item = menu.getItem(0);
-        item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Toast.makeText( getApplicationContext(), "test", Toast.LENGTH_SHORT).show();
-                return true;
-            }
-        });*/
         return true;
     }
+
+
+
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -64,27 +67,47 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
         switch (item.getItemId()) {
             case R.id.Acceuil:
-                /*transaction.show(f);
-                transaction.addToBackStack(null);
-                // Commit the transaction
-                transaction.commit();
-                return true;*/
                 Toast.makeText(getApplicationContext(),"Acceuil",Toast.LENGTH_SHORT).show();
+                return true;
             case R.id.Panier:
                 Toast.makeText(getApplicationContext(),"Panier",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.Recherche:
                 Toast.makeText(getApplicationContext(),"Recherche",Toast.LENGTH_SHORT).show();
+                return true;
             case R.id.Connexion:
                 Toast.makeText(getApplicationContext(),"Connexion",Toast.LENGTH_SHORT).show();
+                return true;
                 //test
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.poisson:
+                Toast.makeText(getApplicationContext(),"Poisson",Toast.LENGTH_SHORT).show();
+                //Intent goIntent = new Intent(getApplicationContext(), AngelFish.class);
+                //startActivity(goIntent);
+                break;
+            case R.id.chien:
+                Toast.makeText(getApplicationContext(),"Chien",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.chat:
+                Toast.makeText(getApplicationContext(),"Chat",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.reptile:
+                Toast.makeText(getApplicationContext(),"Reptile",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.oiseau:
+                Toast.makeText(getApplicationContext(),"Oiseau",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
+    }
 }

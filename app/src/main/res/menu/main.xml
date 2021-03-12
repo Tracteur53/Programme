@@ -4,22 +4,22 @@
 
     <item
         android:id="@+id/Acceuil"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         android:title="Acceuil"
         app:showAsAction="never" />
     <item
         android:id="@+id/Panier"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         android:title="Panier"
         app:showAsAction="never" />
     <item
         android:id="@+id/Recherche"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         android:title="Recherche"
         app:showAsAction="never" />
     <item
         android:id="@+id/Connexion"
-        android:orderInCategory="100"
-        android:title="Connection"
+        android:orderInCategory="101"
+        android:title="Connexion"
         app:showAsAction="never" />
 </menu>
