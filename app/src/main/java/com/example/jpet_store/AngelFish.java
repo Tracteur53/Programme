@@ -21,7 +21,7 @@ public class AngelFish extends AppCompatActivity{
             @Override
             //on cliquant sur EST_1 on se deplace vers la page card
             public void onClick(View v) {
-                Intent goIntent=new Intent(AngelFish.this, Card.class);
+                Intent goIntent=new Intent(AngelFish.this, PageType.class);
                 startActivity(goIntent);
             }
         });
