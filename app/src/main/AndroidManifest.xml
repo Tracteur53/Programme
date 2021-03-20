@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jpet_Store">
-        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".Cat.CardCat"></activity>
+        <activity android:name=".Cat.TypeManx" />
+        <activity android:name=".Cat.Manx" />
+        <activity android:name=".Cat.CatActivity" />
+        <activity android:name=".Dog.CardDog" />
+        <activity android:name=".Dog.TypeBulldog" />
+        <activity android:name=".Dog.Bulldog" />
+        <activity android:name=".Dog.DogActivity" />
+        <activity android:name=".PaymentActivity" />
         <activity
             android:name=".SignIn2_Activity"
             android:label="@string/title_activity_sign_in2_"
             android:theme="@style/Theme.Jpet_Store.NoActionBar" />
         <activity android:name=".SignIn_Activity" />
         <activity android:name=".Login_Activity" />
-        <activity android:name=".Card" />
-        <activity android:name=".PageType" />
+        <activity android:name=".Fish.Card" />
+        <activity android:name=".Fish.PageType" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -28,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AngelFish" />
+        <activity android:name=".Fish.AngelFish" />
     </application>
 
 </manifest>

@@ -10,7 +10,7 @@
         android:id="@+id/fish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fish"
+        android:text="Dog"
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -69,9 +69,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/type1"
-                    android:text="FI-SW-01"
-                    android:textColor="@color/black"
+                    android:id="@+id/dog1"
+                    android:text="K9-BD-01"
+                    android:textColor="@color/purple_700"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:background="#ffffff"
@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Angelfish"
+                    android:text="Bulldog"
                     android:textColor="@color/black"
                     android:layout_weight="1"
                     android:gravity="center"
@@ -96,10 +96,11 @@
 
             <TableRow>
                 <TextView
+                    android:id="@+id/dog2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FI-SW-02"
-                    android:textColor="@color/black"
+                    android:text="K9-BD-01"
+                    android:textColor="@color/purple_700"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:background="#ffffff"
@@ -110,62 +111,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tiger Shark"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
-
-
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-03"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Koi"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
-
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-04"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Goldfish"
+                    android:text="Poodle"
                     android:textColor="@color/black"
                     android:layout_weight="1"
                     android:gravity="center"

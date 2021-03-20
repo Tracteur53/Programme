@@ -5,21 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fish.PageType">
-
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/Bulldog"
+        android:layout_marginTop="50dp"
+        />
     <TextView
-        android:id="@+id/fish"
+        android:id="@+id/adultBulldog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fish"
+        android:text="Male Adult Bulldog"
         android:textColor="@color/black"
-        android:textSize="60sp"
-        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
         android:drawablePadding="9dp"
-        android:paddingTop="20dp"
+        android:paddingTop="30dp"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:gravity="center_horizontal"
         />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,12 +38,11 @@
         >
 
         <TableLayout
-            android:id="@+id/table"
+            android:id="@+id/table3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="30dp"
             android:layout_marginHorizontal="10dp"
-            android:background="#f1f1f1"
             android:collapseColumns="2,2"
             >
 
@@ -43,10 +50,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ProductID"
+                    android:text="EST-6"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
+                    android:background="#f1f1f1"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:padding="20dp"/>
@@ -54,10 +61,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name"
+                    android:text="8708 in stock"
                     android:textColor="@color/black"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
+                    android:textSize="20dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:padding="20dp"/>
@@ -70,11 +76,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/type1"
-                    android:text="FI-SW-01"
+                    android:background="#f1f1f1"
+                    android:text="Male Adult Bulldog"
                     android:textColor="@color/black"
+                    android:textSize="20dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
                     android:layout_marginBottom="1dp"
                     android:layout_marginHorizontal="1dp"
                     android:padding="15dp"/>
@@ -82,11 +89,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Angelfish"
+                    android:text="16.50$"
                     android:textColor="@color/black"
                     android:layout_weight="1"
+                    android:textSize="20dp"
                     android:gravity="center"
-                    android:background="#ffffff"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
                     android:padding="15dp"/>
@@ -98,78 +105,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FI-SW-02"
+                    android:text="Bulldog"
                     android:textColor="@color/black"
+                    android:textSize="20dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
+                    android:background="#f1f1f1"
                     android:layout_marginBottom="1dp"
                     android:layout_marginHorizontal="1dp"
                     android:padding="15dp"/>
 
                 <TextView
+                    android:id="@+id/addcart2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tiger Shark"
-                    android:textColor="@color/black"
+                    android:text="Add to card"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
-
-
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-03"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Koi"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
-
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-04"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Goldfish"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
+                    android:background="@color/purple_500"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
                     android:padding="15dp"/>

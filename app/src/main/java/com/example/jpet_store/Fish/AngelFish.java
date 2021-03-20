@@ -1,4 +1,4 @@
-package com.example.jpet_store;
+package com.example.jpet_store.Fish;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.jpet_store.ui.slideshow.SlideshowFragment;
+import com.example.jpet_store.R;
 
 public class AngelFish extends AppCompatActivity{
     //liaison entre page angelfish et card
