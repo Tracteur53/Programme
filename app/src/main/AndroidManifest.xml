@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jpet_Store">
-        <activity android:name=".Cat.CardCat"></activity>
         <activity android:name=".Cat.TypeManx" />
         <activity android:name=".Cat.Manx" />
         <activity android:name=".Cat.CatActivity" />
-        <activity android:name=".Dog.CardDog" />
         <activity android:name=".Dog.TypeBulldog" />
         <activity android:name=".Dog.Bulldog" />
         <activity android:name=".Dog.DogActivity" />

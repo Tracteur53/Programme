@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.jpet_store.Fish.Card;
 import com.example.jpet_store.R;
 
 public class TypeBulldog extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class TypeBulldog extends AppCompatActivity {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
-                Intent goIntent=new Intent(TypeBulldog.this, CardDog.class);
+                Intent goIntent=new Intent(TypeBulldog.this, Card.class);
                 startActivity(goIntent);
             }
         });
