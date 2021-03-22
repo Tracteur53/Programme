@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fish.PageType">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rattlesnake"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/rattlesnake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Venomless Rattlesnake"
+        android:textColor="@color/black"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:drawablePadding="9dp"
+        android:paddingTop="30dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        tools:context=".MainActivity"
+        >
+
+        <TableLayout
+            android:id="@+id/table3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:collapseColumns="2,2"
+            >
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EST-11"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="#f1f1f1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9634 in stock"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"/>
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/type1"
+                    android:background="#f1f1f1"
+                    android:text="Venomless Rattlesnake"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.50$"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="15dp"/>
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rattlesnake"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#f1f1f1"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:id="@+id/addcart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to card"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/purple_500"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="15dp"/>
+
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

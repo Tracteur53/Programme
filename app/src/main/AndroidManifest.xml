@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jpet_Store">
+        <activity android:name=".Bird.TypeAmazon"></activity>
+        <activity android:name=".Bird.Amazon" />
+        <activity android:name=".Bird.BirdActivity" />
+        <activity android:name=".Reptile.TypeRattles" />
+        <activity android:name=".Reptile.Rattlesnake" />
+        <activity android:name=".Reptile.ReptileActivity" />
         <activity android:name=".Cat.TypeManx" />
         <activity android:name=".Cat.Manx" />
         <activity android:name=".Cat.CatActivity" />
