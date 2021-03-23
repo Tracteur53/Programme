@@ -7,7 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.jpet_store.Bird.BirdActivity;
+import com.example.jpet_store.Cat.CatActivity;
+import com.example.jpet_store.Dog.Bulldog;
+import com.example.jpet_store.Dog.DogActivity;
 import com.example.jpet_store.Fish.AngelFish;
+import com.example.jpet_store.Reptile.ReptileActivity;
+import com.example.jpet_store.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -88,19 +94,23 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()){
             case R.id.poisson:
                 Toast.makeText(getApplicationContext(),"Poisson",Toast.LENGTH_SHORT).show();
-                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new SlideshowFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new AngelFish()).commit();
                 break;
             case R.id.chien:
                 Toast.makeText(getApplicationContext(),"Chien",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new DogActivity()).commit();
                 break;
             case R.id.chat:
                 Toast.makeText(getApplicationContext(),"Chat",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new CatActivity()).commit();
                 break;
             case R.id.reptile:
                 Toast.makeText(getApplicationContext(),"Reptile",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new ReptileActivity()).commit();
                 break;
             case R.id.oiseau:
                 Toast.makeText(getApplicationContext(),"Oiseau",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new BirdActivity()).commit();
                 break;
         }
         return true;

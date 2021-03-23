@@ -14,8 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.jpet_store.AngelFish;
-import com.example.jpet_store.PageType;
+import com.example.jpet_store.Fish.AngelFish;
+import com.example.jpet_store.Fish.AngelFish;
+import com.example.jpet_store.Fish.PageType;
 import com.example.jpet_store.R;
 
 public class SlideshowFragment extends AppCompatActivity {

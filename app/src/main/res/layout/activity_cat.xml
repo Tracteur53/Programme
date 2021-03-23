@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFF"
     tools:context=".Fish.PageType">
 
     <TextView
         android:id="@+id/fish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="9dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
         android:text="Cats"
         android:textColor="@color/black"
         android:textSize="60sp"
-        android:textStyle="bold"
-        android:drawablePadding="9dp"
-        android:paddingTop="20dp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:gravity="center_horizontal"
-        />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"

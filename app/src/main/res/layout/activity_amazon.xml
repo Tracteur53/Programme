@@ -4,135 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fish.PageType">
+    android:background="#FFFF"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/amazon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:drawablePadding="9dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
         android:text="Amazon Parrot"
         android:textColor="@color/black"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:drawablePadding="9dp"
-        android:paddingTop="20dp"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:gravity="center_horizontal"
-        />
+        android:textSize="58sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="#ffffff"
-        tools:context=".MainActivity"
-        >
+        tools:context=".bir">
 
         <TableLayout
             android:id="@+id/table2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="15dp"
             android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="15dp"
             android:background="#f1f1f1"
-            android:collapseColumns="4,4"
-            >
+            android:collapseColumns="4,4">
 
             <TableRow>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="Item ID"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="Product ID"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="Description"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="Price"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
 
             </TableRow>
+
             <TableRow>
+
                 <TextView
                     android:id="@+id/amazon1"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="EST-18"
                     android:textColor="@color/purple_700"
-                    android:background="@color/white"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="AV-CB-01"
                     android:textColor="@color/black"
-                    android:background="@color/white"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Adult Male Amazon Parrot"
-                    android:textColor="@color/black"
-                    android:background="@color/white"
-                    android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Adult Male Amazon Parrot"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
                     android:text="193.50$"
                     android:textColor="@color/black"
-                    android:background="@color/white"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="15dp"/>
+                    android:textStyle="bold" />
 
 
             </TableRow>
