@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PageType">
+    tools:context=".Fish.PageType">
 
     <TextView
-        android:id="@+id/fish"
+        android:id="@+id/amazon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fish"
+        android:text="Amazon Parrot"
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -30,153 +30,112 @@
         >
 
         <TableLayout
-            android:id="@+id/table"
+            android:id="@+id/table2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="30dp"
+            android:layout_marginVertical="15dp"
             android:layout_marginHorizontal="10dp"
             android:background="#f1f1f1"
-            android:collapseColumns="2,2"
+            android:collapseColumns="4,4"
             >
 
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ProductID"
+                    android:text="Item ID"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="25dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="20dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
-                    android:textColor="@color/black"
-                    android:textSize="25dp"
+                    android:textSize="15dp"
                     android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="20dp"/>
-
-
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/type1"
-                    android:text="FI-SW-01"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
                     android:padding="15dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Angelfish"
+                    android:text="Product ID"
                     android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
                     android:padding="15dp"/>
-
-
-            </TableRow>
-
-            <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FI-SW-02"
+                    android:text="Description"
                     android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
                     android:padding="15dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tiger Shark"
+                    android:text="Price"
                     android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
-
-
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-03"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Koi"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
                     android:padding="15dp"/>
 
 
             </TableRow>
             <TableRow>
                 <TextView
+                    android:id="@+id/amazon1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FI-SW-04"
-                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="EST-18"
+                    android:textColor="@color/purple_700"
+                    android:background="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
                     android:padding="15dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Goldfish"
+                    android:layout_height="match_parent"
+                    android:text="AV-CB-01"
                     android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:background="#ffffff"
-                    android:layout_marginRight="1dp"
-                    android:layout_marginBottom="1dp"
+                    android:padding="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Adult Male Amazon Parrot"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="193.50$"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:padding="15dp"/>
 
 
             </TableRow>
-
         </TableLayout>
     </LinearLayout>
 

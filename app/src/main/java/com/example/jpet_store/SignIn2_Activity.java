@@ -3,8 +3,7 @@ package com.example.jpet_store;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.jpet_store.Fish.Card;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -27,7 +26,7 @@ public class SignIn2_Activity extends AppCompatActivity {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
-                Intent goIntent=new Intent(SignIn2_Activity.this,Card.class);
+                Intent goIntent=new Intent(SignIn2_Activity.this, Card.class);
                 startActivity(goIntent);
             }
         });

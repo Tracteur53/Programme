@@ -1,22 +1,17 @@
 package com.example.jpet_store;
 
 //import android.app.FragmentManager;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.jpet_store.ui.gallery.GalleryFragment;
-import com.example.jpet_store.ui.home.HomeFragment;
-import com.example.jpet_store.ui.slideshow.SlideshowFragment;
+import com.example.jpet_store.Fish.AngelFish;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
