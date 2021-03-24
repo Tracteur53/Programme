@@ -8,11 +8,12 @@
     tools:context=".Fish.PageType">
 
     <ImageView
+        android:id="@+id/dog"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/bulldog"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         />
     <TextView
         android:id="@+id/adultBulldog"
@@ -20,7 +21,8 @@
         android:layout_height="wrap_content"
         android:text="Male Adult Bulldog"
         android:textColor="@color/black"
-        android:layout_marginTop="150dp"
+        android:layout_below="@+id/dog"
+        android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         android:drawablePadding="9dp"
@@ -36,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="#ffffff"
+        android:layout_below="@+id/adultBulldog"
         tools:context=".MainActivity"
         >
 

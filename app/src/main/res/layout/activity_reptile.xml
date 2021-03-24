@@ -17,6 +17,7 @@
         android:paddingTop="50dp"
         android:paddingRight="10dp"
         android:text="Reptiles"
+        android:layout_marginTop="90dp"
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold" />
