@@ -14,7 +14,7 @@
         android:drawablePadding="9dp"
         android:gravity="center_horizontal"
         android:paddingLeft="10dp"
-        android:paddingTop="50dp"
+        android:paddingTop="100dp"
         android:paddingRight="10dp"
         android:text="Dog"
         android:textColor="@color/black"

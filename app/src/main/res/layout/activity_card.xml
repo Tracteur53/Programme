@@ -16,7 +16,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:drawablePadding="9dp"
-        android:paddingTop="30dp"
+        android:paddingTop="50dp"
         android:paddingRight="10dp"
         android:paddingLeft="10dp"
         android:gravity="center_horizontal"

@@ -16,6 +16,7 @@
         android:paddingLeft="10dp"
         android:paddingTop="50dp"
         android:paddingRight="10dp"
+        android:layout_marginTop="90dp"
         android:text="Manx"
         android:textColor="@color/black"
         android:textSize="60sp"

@@ -8,18 +8,21 @@
     tools:context=".Fish.PageType">
 
     <ImageView
+        android:id="@+id/perrot"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:src="@drawable/parrot"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         />
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Adult Male Amazon Parrot"
         android:textColor="@color/black"
-        android:layout_marginTop="150dp"
+        android:layout_below="@+id/perrot"
+        android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         android:drawablePadding="9dp"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="#ffffff"
+        android:layout_below="@+id/text"
         tools:context=".MainActivity"
         >
 
