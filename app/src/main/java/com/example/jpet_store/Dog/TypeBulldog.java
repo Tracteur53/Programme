@@ -25,9 +25,14 @@ public class TypeBulldog extends Fragment {
         addcart2=root.findViewById(R.id.addcart2);
         addcart2.setOnClickListener(new View.OnClickListener() {
             @Override
-            //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
+            //Cette fonction permet de ce deplacer vers le panier
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new Card()).commit();
+                Card card = new Card();
+                Bundle bundle = new Bundle();
+                bundle.putString("type","BullDog");
+                bundle.putFloat("price", (float) 16.5);
+                card.setArguments(bundle);
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, card).commit();
             }
         });
         return root;

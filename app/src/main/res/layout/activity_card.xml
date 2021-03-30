@@ -77,41 +77,46 @@
             </TableRow>
 
             <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:text="Large Angelfish"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginHorizontal="1dp"
-                    android:padding="15dp"/>
 
                 <TextView
+                    android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="2"
-                    android:background="@color/white"
-                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:textSize="20dp"
+                    android:background="@color/white"
                     android:gravity="center"
+                    android:padding="15dp"
+                    android:text="None"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="1dp"
                     android:layout_marginBottom="1dp"
-                    android:padding="15dp"/>
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="None"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
                 <TextView
+                    android:id="@+id/total"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="33.00$"
-                    android:background="@color/white"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
                     android:layout_weight="1"
+                    android:background="@color/white"
                     android:gravity="center"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:text="None"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
                 <TextView
                     android:id="@+id/shareBtn"
                     android:layout_width="wrap_content"
@@ -128,21 +133,21 @@
 
         </TableLayout>
     </LinearLayout>
+
     <TextView
         android:id="@+id/subTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sub Total: 33.00$"
-        android:textSize="23dp"
-        android:gravity="center"
-        android:textStyle="bold|italic"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="500dp"
         android:layout_marginLeft="30dp"
-        />
+        android:layout_marginTop="500dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Sub Total: None"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold|italic" />
         />
     <LinearLayout
         android:layout_width="match_parent"

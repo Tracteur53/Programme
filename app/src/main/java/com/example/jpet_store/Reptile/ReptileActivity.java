@@ -29,7 +29,7 @@ public class ReptileActivity extends Fragment {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new Rattlesnake()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new TypeRattles()).commit();
             }
         });
         return root;

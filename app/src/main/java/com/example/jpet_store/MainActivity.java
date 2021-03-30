@@ -12,6 +12,7 @@ import com.example.jpet_store.Cat.CatActivity;
 import com.example.jpet_store.Dog.Bulldog;
 import com.example.jpet_store.Dog.DogActivity;
 import com.example.jpet_store.Fish.AngelFish;
+import com.example.jpet_store.Fish.Card;
 import com.example.jpet_store.Reptile.ReptileActivity;
 import com.example.jpet_store.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -76,12 +77,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
             case R.id.Panier:
                 Toast.makeText(getApplicationContext(),"Panier",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new Card()).commit();
                 return true;
             case R.id.Recherche:
-                Toast.makeText(getApplicationContext(),"Recherche",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Recherche d'une bonne note",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.Connexion:
                 Toast.makeText(getApplicationContext(),"Connexion",Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new SignIn_Activity()).commit();
                 return true;
                 //test
             default:

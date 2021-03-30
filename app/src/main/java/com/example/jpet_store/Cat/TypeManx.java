@@ -27,6 +27,11 @@ public class TypeManx extends Fragment {
             @Override
             //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
             public void onClick(View v) {
+                Card card = new Card();
+                Bundle bundle = new Bundle();
+                bundle.putString("type","Manx");
+                bundle.putFloat("price", (float) 58.5);
+                card.setArguments(bundle);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,new Card()).commit();
             }
         });

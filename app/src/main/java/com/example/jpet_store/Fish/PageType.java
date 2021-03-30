@@ -25,8 +25,13 @@ public class PageType extends Fragment {
         addcart=root.findViewById(R.id.addcart);
         addcart.setOnClickListener(new View.OnClickListener() {
             @Override
-            //Cette fonction permet de ce deplacer du tableau des poissons au tableau de Angelfish
+            //Cette fonction permet de ce deplacer vers le panier
             public void onClick(View v) {
+                Card card = new Card();
+                Bundle bundle = new Bundle();
+                bundle.putString("type","Large Angelfish");
+                bundle.putFloat("price", (float) 16.5);
+                card.setArguments(bundle);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new Card()).commit();
             }
         });
