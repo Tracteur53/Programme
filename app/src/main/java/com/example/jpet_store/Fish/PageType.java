@@ -32,7 +32,7 @@ public class PageType extends Fragment {
                 bundle.putString("type","Large Angelfish");
                 bundle.putFloat("price", (float) 16.5);
                 card.setArguments(bundle);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new Card()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,card).commit();
             }
         });
         return root;

@@ -32,7 +32,7 @@ public class TypeRattles extends Fragment {
                 bundle.putString("type","Rattles");
                 bundle.putFloat("price", (float) 18.5);
                 card.setArguments(bundle);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,new Card()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,card).commit();
             }
         });
         return root;

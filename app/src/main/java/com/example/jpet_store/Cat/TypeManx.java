@@ -32,7 +32,7 @@ public class TypeManx extends Fragment {
                 bundle.putString("type","Manx");
                 bundle.putFloat("price", (float) 58.5);
                 card.setArguments(bundle);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,new Card()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment,card).commit();
             }
         });
         return root;
